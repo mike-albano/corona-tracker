@@ -142,7 +142,7 @@ def parse_data():
     print('Increase in positive cases in yuor state by %i' % state_obj.pos_delta)
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i positive cases in your state.' %
+      text_to_speech('%i more positive cases in your state.' %
                      state_obj.pos_delta, '0')
       playsound('0.mp3')
 
@@ -150,14 +150,14 @@ def parse_data():
     print('Increase in negative cases. by %i' % state_obj.neg_delta)
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i negative cases in your state' %
+      text_to_speech('%i more negative cases in your state' %
                      state_obj.neg_delta, '1')
       playsound('1.mp3')
   if state_obj.death_delta > 0:
     print('Increase in deaths by %i' % state_obj.death_delta)
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i more dead people.' %
+      text_to_speech('%i more dead people in your state.' %
                      state_obj.death_delta, '2')
       playsound('2.mp3')
 
@@ -171,7 +171,7 @@ def parse_data():
     print('Increase in deaths in your country by %i' % country_obj.death_delta)
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i more dead people in your country.' %
+      text_to_speech('%i more dead people in your country.' %
                      country_obj.death_delta, '3')
       playsound('3.mp3')
 
@@ -179,7 +179,7 @@ def parse_data():
     print('Increase in cases in your country by %i' % country_obj.pos_delta)
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i more cases in your country.' %
+      text_to_speech('%i more cases in your country.' %
                      country_obj.pos_delta, '4')
       playsound('4.mp3')
 
@@ -193,7 +193,7 @@ def parse_data():
                                                      county_obj.death_delta))
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i more dead people in %s county.' %
+      text_to_speech('%i more dead people in %s county.' %
                      (county_obj.death_delta, my_county), '5')
       playsound('5.mp3')
 
@@ -202,7 +202,7 @@ def parse_data():
                                                     country_obj.pos_delta))
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
-      text_to_speech('Increase of %i cases in %s county.' %
+      text_to_speech('%i more cases in %s county.' %
                      (county_obj.pos_delta, my_county), '6')
       playsound('6.mp3')
 
