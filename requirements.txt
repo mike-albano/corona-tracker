@@ -1,4 +1,5 @@
 gTTs
 playsound
+requests
 # If on OSX
 # PyObjC

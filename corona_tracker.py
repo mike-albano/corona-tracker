@@ -255,7 +255,7 @@ if __name__ == '__main__':
   # Assign variables to the arguments provided
   my_state = args['state'].upper()
   my_country = args['country'].upper()
-  my_county = args['county'].capitalize()
+  my_county = args['county'].title()
   # Build objects to store data points.
   state_obj = StatsObject('state_data')
   country_obj = StatsObject('country_data')
