@@ -197,9 +197,9 @@ def parse_data():
                      (county_obj.death_delta, my_county), '5')
       playsound('5.mp3')
 
-  if country_obj.pos_delta > 0:
+  if county_obj.pos_delta > 0:
     print('Increase in cases in %s county by %i' % (my_county,
-                                                    country_obj.pos_delta))
+                                                    county_obj.pos_delta))
     # Comment out this line to disable sound playing.
     if datetime.datetime.now().strftime("%H") not in OFF_HOURS:
       text_to_speech('%i more cases in %s county.' %
